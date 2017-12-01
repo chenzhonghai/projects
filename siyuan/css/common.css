@@ -404,7 +404,7 @@ textarea { resize: none; overflow: auto; outline: none; }
 .contactUs span {
 	color: #5bb26f;
 }
-.contactUs img {
+.contactUs iframe {
 	margin-top: 14px;
 }
 .precontract {
