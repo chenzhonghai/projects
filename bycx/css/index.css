@@ -1,0 +1,288 @@
+@charset "utf-8";
+/*初始化*/
+body,div,ul,p,h1,h2,h3,a,img,li,span,strong,input,textarea{ padding:0; margin:0; }
+body { font: 16px "microsoft yahei"; color: #333; background: #fff; min-width: 980px;}
+li { list-style: none; }
+img { border: 0; vertical-align: middle; }
+a { text-decoration: none; }
+input {	outline: none; border: 0; }
+textarea{ resize: none; overflow: auto; outline: none; }
+
+/*公共样式*/
+.clear { zoom: 1; }
+.clear:after { content:''; display: block; clear: both; }
+.fl { float: left; }
+.fr { float: right; }
+
+#header,#content,#fonter {
+	width: 100%;
+	height: auto;
+}
+#header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	min-width: 980px;
+	background: rgba(0,0,0,0.5);
+}
+#fonter {
+	padding: 50px 0;
+	background: #333;
+	text-align: center;
+}
+#header .logo {
+	padding-left: 5%;
+}
+#header .logo img {
+	padding: 15px 0;
+}
+#header .nav {
+	padding-right: 5%;
+}
+#header .nav a {
+	float: left;
+	display: block;
+	padding: 0 20px;
+	font-size: 15px;
+	line-height: 68px;
+	color: #fff;
+}
+#header .nav .active {
+	background: #f84343;
+}
+.home,.appDown,.consociation{
+	position: relative;
+}
+.home>img,.appDown>img,.consociation>img {
+	width: 100%;
+}
+.home div {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 100%;
+	margin-top: -160px;
+	text-align: center;
+}
+.home div img {
+	width: 342px;
+	margin-bottom: 38px;
+}
+.home div p {
+	font-size: 26px;
+	line-height: 46px;
+	color: #fff;
+}
+.home .firstP {
+	padding-bottom: 16px;
+	line-height: 70px;
+	font-size: 50px;
+}
+.aboutUs {
+	overflow: hidden;
+}
+.aboutUs .intro {
+	position: relative;
+	width: 60%;
+    padding: 80px 75px 60px;
+    margin: 160px auto;
+    border: 2px solid #F84343;
+}
+.aboutUs .intro h1 {
+	position: absolute;
+	top: -36px;
+	left: 50%;
+	padding: 0 20px;
+	margin-left: -162px;
+	font-size: 72px;
+	font-weight: normal;
+	line-height: 72px;
+	background: #fff;
+}
+.aboutUs .intro p {
+	margin: 30px 0;
+	font-size: 18px;
+	line-height: 30px;
+}
+.aboutUs .intro2 li {
+	float: left;
+	width: 33.33%;
+	height: 346px;
+	padding: 70px 15px;
+	text-align: center;
+	color: #fff;
+	box-sizing: border-box;
+}
+.bgColor {
+	background: #ff5656;
+}
+.bgColor2 {
+	background: #f84d4d;
+}
+.bgColor3 {
+	background: #fa3e3e;
+}
+.aboutUs .intro2 li h1 {
+	height: 84px;
+	font-size: 74px;
+	font-weight: normal;
+	line-height: 84px;
+}
+.aboutUs .intro2 li p {
+    padding: 0px 13%;
+    margin-top: 30px;
+    font-size: 24px;
+    line-height: 44px;
+
+}
+.aboutUs .intro3 {
+	 padding: 8% 6%;
+}
+.aboutUs .intro3 h1 {
+	padding-bottom: 8%;
+	font-size: 72px;
+	font-weight: normal;
+	text-align: center;
+}
+.aboutUs .intro3 div {
+	float: left;
+	width: 33.33%;
+	padding: 0 15px;
+	text-align: center;
+	box-sizing: border-box;
+}
+.aboutUs .intro3 .imgBox {
+	height: 198px;
+	line-height: 198px;
+}
+.aboutUs .intro3 div strong {
+	display: block;
+	font-size: 30px;
+	font-weight: normal;
+	line-height: 70px;
+}
+.aboutUs .intro3 div p {
+	font-size: 18px;
+	line-height: 30px;
+}
+.appDown>div {
+	position: absolute;
+	top: 50%;
+    right: 10%;
+    margin-top: -234px;
+}
+.appDown div h1 {
+    font-size: 80px;
+    font-weight: normal;
+    color: #FA3E3E;
+}
+.appDown div p {
+    font-size: 36px;
+    color: #fff;
+    margin: 40px 0 ;
+}
+.appDown div a {
+	display: block;
+	width: 320px;
+	height: 90px;
+	margin-top: 40px;
+	border: 4px solid #fff;
+	border-radius: 45px;
+	font-size: 36px;
+	text-align: center;
+	line-height: 90px;
+	color: #fff;
+}
+.appDown div a i {
+	margin-right: 15px;
+}
+.appDown div a:hover {
+	border-color: #f84343;
+	background: #f84343;
+}
+.presentation {
+    width: 85%;
+    margin: 0px auto;
+    padding-top: 8%;
+}
+.presentation>div {
+	text-align: center;
+}
+.presentation>div p {
+    font-size: 30px;
+    color: #EE4242;
+    padding: 10px 0 70px;
+}
+.presentation ul li {
+	float: left;
+	width: 50%;
+	height: 218px;
+}
+.presentation li>div {
+	width: 416px;
+	margin: 0 auto;
+}
+.presentation li img {
+	float: left;
+}
+.presentation li div div {
+	float: left;
+	height: 218px;
+	padding-left: 10px;
+}
+.presentation li h1 {
+	padding: 10px 0;
+	font-size: 30px;
+	font-weight: normal;
+}
+.presentation li p {
+	line-height: 28px;
+}
+.consociation div {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -208px 0 0 -341px;
+	text-align: center;
+}
+.consociation div h2 {
+	font-size: 50px;
+	color: #fff;
+}
+.consociation div h1 {
+	color: #F84343;
+    font-size: 72px;
+    padding: 28px 0;
+}
+.consociation div p {
+    color: #fff;
+    font-size: 22px;
+    line-height: 50px;
+}
+#fonter div {
+	width: 600px;
+	margin: 0 auto;
+}
+#fonter p {
+	color: #fff;
+	line-height: 28px;
+}
+#fonter img {
+	padding-right: 6px;
+}
+#fonter a {
+	color: #337ab7;
+}
+#fonter a:hover {
+	color: #274865;
+}
+#goTop {
+	position: fixed;
+	right: 50px;
+	bottom: 50px;
+	z-index: 999;
+	display: none;
+	cursor: pointer;
+}
+
