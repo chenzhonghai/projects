@@ -111,6 +111,7 @@ textarea{ resize: none; overflow: auto; outline: none; }
 	position: fixed;
 	top: 50%;
 	right: -154px;
+	z-index: 1111;
 	width: 150px;
 	margin-top: -200px;
 	border: 2px solid #76a20c;
@@ -158,6 +159,7 @@ textarea{ resize: none; overflow: auto; outline: none; }
 	position: fixed;
 	top: 50%;
 	right: 0;
+	z-index: 1111;
 	width: 26px;
 	height: 112px;
 	margin-top: -56px;
