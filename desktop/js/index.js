@@ -17,12 +17,29 @@ function menuDown(obj){
 		}
 	});	
 }
-// 关闭页面
+// 关闭当前网页
 $('#win10Menu .close').click(function(){
-	if(confirm('您确定要关闭桌面吗？')){
-		$('html').remove();
-	}
+	CloseWebPage();
 });
+
+function CloseWebPage(){
+ if (navigator.userAgent.indexOf("MSIE") > 0) {
+  if (navigator.userAgent.indexOf("MSIE 6.0") > 0) {
+   window.opener = null;
+   window.close();
+  } else {
+   window.open('', '_top');
+   window.top.close();
+  }
+ }
+ else if (navigator.userAgent.indexOf("Firefox") > 0) {
+  window.location.href = 'about:blank ';
+ } else {
+  window.opener = null;
+  window.open('', '_self', '');
+  window.close();
+ }
+}
 
 // 显示win10菜单
 showMenu();
@@ -103,6 +120,7 @@ function toTwo ( n ) {
 
 
 
+// 点击IE图标创建浏览器
 $('#ie').click(function(){
 	var oA = $('<div><img src="img/ie.png" alt=""><span>百度</span><em>X</em></div>');
 	var oDiv = $('<div class="content"><ul class="clear"><li class="fl websiteLogo"><img src="img/ie.png" alt=""><span>百度</span></li><li class="fr websiteBtn"><input type="text" value="http://www.baidu.com"><img class="go" src="img/go.png" alt=""><img src="img/shrink.jpg" alt=""><img src="img/scale.jpg" alt=""><img src="img/close1.jpg" alt=""></li></ul><iframe src="http://baidu.com"></iframe></div>');
@@ -110,8 +128,9 @@ $('#ie').click(function(){
 
 });
 
+ // 双桌面图标创建浏览器
 $('#icoList li').dblclick(function(){
-	var arr = ['http://chenzhonghai.github.io/projects/tmall','http://www.mango168.top','http://chenzhonghai.github.io/projects/siyuan','http://chenzhonghai.github.io/projects/news','http://www.chenzhonghai.com'];
+	var arr = ['http://chenzhonghai.github.io/projects/tmall','http://www.mango168.top','http://chenzhonghai.github.io/projects/siyuan','http://chenzhonghai.github.io/projects/news','http://www.chenzhonghai.com','https://chenzhonghai.github.io/projects/bycx/','http://chenzhonghai.github.io/projects/mjs'];
 	var num = $(this).index();
 	var val = $(this).find('p').html(); 
 	var src = $(this).find('img').attr('src');
